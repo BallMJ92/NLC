@@ -24,8 +24,6 @@ class processor:
         for i in range(0, len(var)):
             # Checking each word according to its index in the sentence
             if var[i] in transitiveActivePresentTenseVerbs:
-                # Printing word if it is TAPrTV along with its Humancentric index in sentence
-                #print("Transitive active present tense verb '%s' is word %d within the sentence." % (str(var[i]), n))
                 # Adding the index location of TAPrTV to list
                 indexLocations.append(int(i))
                 # Getting index of word within the TAPrTV list
@@ -34,18 +32,15 @@ class processor:
                 print("Opposite of %s is %s" % (var[i], transitiveActivePastTenseVerbs[index]))
                 keyWords.append(TAPrTV+var[i])
             if var[i] in transitiveActivePastTenseVerbs:
-                #print("Transitive active past tense verb '%s' is word %d within the sentence." % (str(var[i]), n))
                 indexLocations.append(int(i))
                 index = int(transitiveActivePastTenseVerbs.index(var[i]))
                 print("Opposite of %s is %s" % (var[i], transitiveActivePresentTenseVerbs[index]))
                 keyWords.append(TAPaTV+var[i])
             if var[i] in personalPronouns:
-                #print("Personal pronoun '%s' is word %d within the sentence." % (str(var[i]), n))
                 indexLocations.append(int(i))
                 index = int(personalPronouns.index(var[i]))
                 keyWords.append(PPr+var[i])
             if var[i] in subjectivePronouns:
-                #print("Subjective pronoun '%s' is word %d within the sentence." % (str(var[i]), n))
                 indexLocations.append(int(i))
                 index = int(subjectivePronouns.index(var[i]))
                 keyWords.append(SPr+var[i])
