@@ -5,6 +5,13 @@ personalPronouns = ['I', 'you', 'he', 'she', 'it',
 subjectivePronouns = ['I', 'you', 'he', 'she', 'it',
                       'we', 'they', 'what', 'who']
 
-transitiveActiveVerbs = ['kicked', 'ate']
+transitiveActivePresentTenseVerbs = ['buy', 'pass', 'take',
+                                     'lend', 'eat', 'touch']
 
-transitivePassiveVerbs = ['stolen', 'demolished']
+transitiveActivePastTenseVerbs = ['bought', 'ate', 'touched', 'lent']
+
+transitivePassiveVerbs = ['stolen', 'demolished', 'taken']
+
+TAPrTV = "TAPrTV: "
+
+TAPaTV = "TAPaTV: "
