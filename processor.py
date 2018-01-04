@@ -9,7 +9,6 @@ class processor:
     def sentenceComprehension(self, var):
         """
         Key:
-
         TAPrTV - Transitive Active Present Tense Verbs
         TAPaTV - Transitive Active Past Tense Verbs
         PPr - Personal Pronouns
