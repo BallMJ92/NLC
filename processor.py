@@ -18,7 +18,6 @@ class processor:
 
         indexLocations = []
         keyWords = []
-        n = 1
 
         # Analysing each individual word in sentence
         for i in range(0, len(var)):
@@ -44,7 +43,6 @@ class processor:
                 indexLocations.append(int(i))
                 index = int(subjectivePronouns.index(var[i]))
                 keyWords.append(SPr+var[i])
-            n+=1
 
         print(keyWords)
         print(indexLocations)
