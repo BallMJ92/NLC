@@ -51,6 +51,7 @@ class processor:
         sentence = str(input("Enter a sentence: "))
         self.tokenize(sentence)
         self.sentenceComprehension(self.wordList)
+        
 
 
 if __name__ == "__main__":
